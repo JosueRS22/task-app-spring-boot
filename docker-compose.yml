@@ -1,0 +1,13 @@
+name: detviro-build-task-app
+services: 
+  ui: 
+    image: ghcr.io/detviro/detviro-build-task-app:latest
+    ports:
+      - "3000:3000"
+
+    environment:
+      -  BACKEND_HOST=host.docker.internal
+      -  BACKEND_PORT=8080
+    
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
