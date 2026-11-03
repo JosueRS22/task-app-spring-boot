@@ -1,7 +1,6 @@
 package com.devtiro.task.domain.dto;
 
 import com.devtiro.task.domain.entity.TaskPriority;
-
 import jakarta.annotation.Nullable;
 import jakarta.validation.constraints.FutureOrPresent;
 import jakarta.validation.constraints.NotBlank;
@@ -22,6 +21,7 @@ public record CreateTaskRequestDto(
     @NotNull(message = ERROR_MESSAGE_PRIORITY)
     TaskPriority priority
 ) {
+    
     private static final String ERROR_MESSAGE_TITLE_LENGTH = 
         "Title must be between 1 and 255 characters.";
 
