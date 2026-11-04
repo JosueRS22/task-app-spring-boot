@@ -1,7 +1,7 @@
-name: detviro-build-task-app
+name: devtiro-build-task-app
 services: 
   ui: 
-    image: ghcr.io/detviro/detviro-build-task-app:latest
+    image: ghcr.io/devtiro/devtiro-build-task-app:latest
     ports:
       - "3000:3000"
 
